@@ -35,5 +35,5 @@
   <%= @amplifier.weight %>
 </p>
 
-<%= link_to 'Edit', edit_amplifier_path(@amplifier) %> |
-<%= link_to 'Back', amplifiers_path %>
+<%= link_to 'Show Comments', [@amplifier, :comments] %> |
+<%= link_to 'New Comment', [:new, @amplifier, :comment] %> |

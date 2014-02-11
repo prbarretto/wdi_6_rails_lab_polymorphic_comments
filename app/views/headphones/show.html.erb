@@ -25,5 +25,5 @@
   <%= @headphone.price %>
 </p>
 
-<%= link_to 'Edit', edit_headphone_path(@headphone) %> |
-<%= link_to 'Back', headphones_path %>
+<%= link_to 'Show Comments', [@headphone, :comments] %> |
+<%= link_to 'New Comment', [:new, @headphone, :comment] %> |

@@ -1,16 +1,13 @@
 PolyLab::Application.routes.draw do
-  resources :comments
-
   resources :speakers do
-  	resources :comments
+  	resources :comments, defaults: {commentable: 'speaker'}
   end
 
   resources :amplifiers do
-  	resources :comments
+  	resources :comments, defaults: {commentable: 'amplifier'}
   end
 
   resources :headphones do
-  	resources :comments
+  	resources :comments, defaults: {commentable: 'headphone'}
   end
-
 end
